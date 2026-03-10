@@ -1,0 +1,43 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>X Article Publish</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="hero">
+        <p class="eyebrow">X Article Publisher</p>
+        <h1>Markdown to X</h1>
+        <p class="sub">Paste markdown with image URLs. We will upload images through X native media flow.</p>
+      </header>
+
+      <section class="editor-card">
+        <div class="toolbar">
+          <button id="importBtn" class="btn ghost">Import .md</button>
+          <button id="clearBtn" class="btn ghost">Clear</button>
+          <span id="charCount">0 chars</span>
+        </div>
+
+        <input id="fileInput" type="file" accept=".md,.markdown,.txt" hidden />
+        <textarea id="markdownInput" placeholder="# Your markdown\n\nPaste content here..."></textarea>
+      </section>
+
+      <section class="actions">
+        <button id="publishBtn" class="btn primary">Open X and Publish</button>
+      </section>
+
+      <section class="creator-card" aria-label="developer info">
+        <p class="creator-title">开发者信息</p>
+        <p class="creator-line"><span>开发者</span><strong>阑梦清川</strong></p>
+        <p class="creator-line"><span>公众号</span><strong>阑梦清川</strong></p>
+        <p class="creator-line"><span>知识星球</span><strong>阑梦清川的AI学习社群</strong></p>
+      </section>
+
+      <p id="status" class="status">Ready.</p>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>
